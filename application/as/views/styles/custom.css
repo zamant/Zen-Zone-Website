@@ -1,0 +1,36 @@
+/*** width of the arrow must be 198px ***/
+div#header .steps li.current a{
+	background: transparent url(../images/arrow-a.png) center right no-repeat;
+}
+div#header .steps li.inactive a{
+	
+	background: transparent url(../images/arrow-n.png) center right no-repeat;
+}
+
+.message-box {
+	text-align: center;
+	padding: 5px 0px;
+	color: #545454;
+	width: 524px;
+	margin:0px auto 35px auto;
+	font-size: 14px;
+}
+
+.message-box-side{
+	text-align: center;
+	padding: 5px 0px;
+	color: #545454;
+	width: 519px;
+	margin:0px 0px 35px 0px;
+	font-size: 14px;
+}
+.ok {
+	background-color: #d7f7c4;
+	border: 1px solid #82cb2f;
+}
+
+.error {
+	background-color: #ffcdd1;
+	border: 1px solid #e10c0c;
+}
+

@@ -1,0 +1,31 @@
+// db name should be homeopathy.
+
+create table users
+(
+ id int primary key auto_increment,
+ email varchar(50) not null,
+ first_name varchar(20) not null,
+ last_name varchar(20) not null,
+ company varchar(50),
+ address varchar(100) not null,
+ postal_code char(6) not null,
+ home_phone varchar(11),
+ cell_phone varchar(11),
+ city varchar(50),
+ gender_is_male tinyint(1) not null,
+ -- 1 for male, 0 for female 
+ password char(32)
+);
+
+create table newsletter_email
+(
+ id int primary key auto_increment,
+ email varchar(50) not null,
+ unique(email)
+);
+
+
+
+
+
+

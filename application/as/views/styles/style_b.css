@@ -1,0 +1,553 @@
+* {
+	font-family: Arial, Helvetica, sans-serif;
+}
+html,body{
+	margin:0px;
+	padding:0px;
+}
+
+
+div#header{
+	
+}
+
+
+div#main{
+	padding:0px;
+	margin:35px 0px 0px 0px;
+	
+}
+/*******************start of steps button css *******************************/
+div.steps{
+	width: 524px;
+	margin:auto;
+}
+
+div#header .steps {
+	background: #FFF;
+	padding: 1px 0;
+	overflow: hidden;
+}
+div#header .steps ul, div#header .steps li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+div#header .steps ul { float: left; }
+div#header .steps li {
+	float: left;
+	width: 198px;
+}
+div#header .steps li a {
+	display: block;
+	padding: 10px 0px;
+	background: #000;
+	color: #000;	
+	text-decoration: none;
+}
+div#header .steps li a { 
+	font-size: 12px; 
+	color:#FFFFFF;
+}
+div#header .steps li a strong { 
+	font-size: 20px; 
+}
+
+div#header .steps li.inactive a{
+	color:#CCCCCC;
+}
+
+div#header .steps li.step, div#header .steps li.step a {
+	position: relative;
+	z-index: 3;
+}
+div#header .steps li.step-2, div#header .steps li.step-2 a { 
+	z-index: 2; 
+}
+div#header .steps li.step-3, div#header .steps li.step-3 a { 
+	z-index: 1; 
+}
+
+
+div#header .steps li.step-1 a,div#header .steps li.step-2 a, div#header .steps li.step-3 a{
+	padding-left:35px;
+}
+
+div#header .steps li.step-2, div#header .steps li.step-3 { 
+	margin-left: -35px;
+}
+/*******************end of steps button css *******************************/
+
+
+/*******************start of calendar css *******************************/
+div#calendar{
+	width:524px;
+	margin:0px auto;
+	padding:0px;
+	clear:both;
+	position:relative;
+}
+
+div#calendar ul, div#calendar ul li{
+	list-style: none;
+	float:left;
+	padding:0px;
+	margin:0px;
+}
+
+div#calendar div#navi{
+	width:524px;
+	margin:auto;
+	position:relative;
+	height:30px;
+	text-align: center;
+	color:#000;	
+	font-weight: bold;
+}
+
+div#calendar div#navi div#prev{
+	position:absolute;
+	top:0px;
+	left:0px;
+}
+div#calendar div#navi div#next{
+	position:absolute;
+	top:0px;
+	right:0px;
+}
+
+div#calendar .clear { /* generic container (i.e. div) for floating buttons */
+    overflow: hidden;
+    width: 100%;
+}
+
+div#calendar a.button {
+    background: transparent url('../images/bg_button_a.png') no-repeat scroll top right;
+    color: #444;
+    display: block;
+    float: left;
+    font: normal 12px arial, sans-serif;
+    height: 24px;
+    margin-right: 6px;
+    padding-right: 18px; /* sliding doors padding */
+    text-decoration: none;
+}
+
+div#calendar a.button span {
+    background: transparent url('../images/bg_button_span.png') no-repeat;
+    display: block;
+    line-height: 14px;
+    padding: 5px 0 5px 18px;
+} 
+
+div#calendar a.button:active {
+    background-position: bottom right;
+    color: #000;
+    outline: none; /* hide dotted outline in Firefox */
+}
+
+div#calendar a.button:active span {
+    background-position: bottom left;
+    padding: 6px 0 4px 18px; /* push text down 1px */
+} 
+
+
+div#calendar ul li{
+	display:block;
+	width:69px;
+	height:55px;	
+	margin:0px 0px 1px 1px;
+	padding-left: 5px;
+	padding-top: 5px;
+	font-size:20px;
+	font-weight:bold;
+	
+	background-color:#999999;
+	color:#FFFFFF;
+}
+
+div#calendar ul li.title{
+	background-color:#FFF;
+	color:#000;
+	height:20px;	
+	padding-left: 5px;
+	padding-top: 5px;
+	font-size:12px;
+}
+
+div#calendar ul li.inactive{
+	background-color:#CCCCCC;
+	color:#999999;
+
+}
+
+div#calendar ul li.block{
+	background-color:#FF0000;
+	color:#999999;
+
+}
+
+div#calendar ul li.start{
+	margin-left:0px;
+}
+/*******************end of calendar css *******************************/
+
+
+
+/****************step 2  form *********************/
+form.form-2{
+	margin:0px;
+	padding:0px;
+}
+
+form.form-2 div{
+	display:block;
+	margin: 35px 0px;
+	position: relative;
+}
+
+form.form-2 label {
+	float:left;
+	width: 100px;
+	font-size: 12px;
+	font-weight:bold;
+}
+
+form.form-2 input[type="text"] {
+	border:1px solid  #CCCCCC;
+	width: 50px;
+}
+
+form.form-2 span.append{
+	font-size: 10px;
+}
+
+
+
+/****************end of step 2  form *********************/
+
+
+/****************step 3  form *********************/
+form.form-3{
+	margin:35px 0px 0px 0px;
+	padding:0px;
+}
+
+form.form-3 fieldset{
+	margin:35px 0px 0px 0px;
+	padding:0px 0px 0px 10px;
+	border:1px solid  #CCCCCC;
+}
+
+form.form-3 fieldset legend{
+	color: #999999;
+	font-size:18px;
+	font-weight:bold;
+}
+
+form.form-3 fieldset div{
+	display:block;
+	margin: 35px 0px;
+	position: relative;
+}
+
+form.form-3 fieldset label {
+	float:left;
+	width: 140px;
+	font-size: 12px;
+	font-weight:bold;
+	margin-left:10px;
+}
+
+form.form-3 fieldset input[type="text"],form.form-3 fieldset input[type="password"],form.form-3 fieldset textarea {
+	font-size:12px;
+	border:1px solid  #CCCCCC;
+	width: 300px;
+}
+
+form.form-3 fieldset textarea{
+	height:200px;
+}
+
+
+/****************end of step 3  form *********************/
+form.form-2 div.seperator,div.seperator{
+	height::1px;
+	width:100%;
+	border-bottom:1px solid #FF0000;
+	margin:0px;
+}
+
+div#submit{
+	width:524px;
+	margin: 35px auto;	
+}
+
+div#submit input[type=image],div#submit input[type=submit]{
+    float:right;
+}
+
+div#overlayer {
+	text-align:center;
+}
+
+div#overlayer img{
+	z-index: 9999;
+}
+
+.ajax-element{
+	display:none;
+}
+
+.html-element{
+	display:none;
+}
+
+/**************************admin*****************************/
+div#side{
+	float:left;
+}
+
+ul#menu, ul#menu ul {
+  list-style-type:none;
+  margin: 0;
+  padding: 0;
+  width: 160px;
+}
+
+ul#menu a {
+  font-size:12px;
+  display: block;
+  text-decoration: none;	
+}
+
+ul#menu li {
+  margin-top: 1px;
+}
+
+ul#menu li a {
+  background: #333;
+  color: #fff;	
+  padding: 0.5em;
+}
+
+ul#menu li a:hover {
+  background: #000;
+}
+
+ul#menu li ul li a {
+  background: #CCCCCC;
+  color: #000;
+  padding-left: 20px;
+}
+
+ul#menu li ul li a:hover {
+  background: #999999;
+  border-left: 5px #000 solid;
+  padding-left: 15px;
+}
+
+.list {
+	font-size:12px;
+	margin:0px 0px 0px 18px;
+	padding:0px;
+}
+.list li{
+	margin:5px 0px 0px 0px;
+	list-style-position:inherit:
+}
+.list li a{
+	color:#000;
+	text-decoration: none;
+}
+.list li a:hover{
+	color:#999999;
+}
+
+div#breadcrumb{
+	font-size:12px;
+	margin:0px 0px 25px 0px;
+}
+div#breadcrumb a{
+	text-decoration:none;
+	color:#000;
+}
+div#breadcrumb a:link{
+	color:#000;
+}
+div#breadcrumb a:visted{
+	color:#000;
+}
+div#breadcrumb a:hover{
+	color:#999999;
+}
+div#breadcrumb a:active{
+	color:#999999;
+}
+
+div#breadcrumb span.current{
+	color:#999999;
+}
+
+table.data{
+	table-layout:fixed;
+	width:531px;
+	padding:0px;
+	margin:0px;	
+	border:1px solid #CCCCCC;
+}
+
+table.data tr{
+	height:28px;
+}
+
+table.data thead tr{
+	background-color:#999999;
+}
+table.data thead tr{
+	height:30px;
+}
+table.data thead tr th{
+	color:#FFFFFF;
+	font-size:12px;
+	text-align:center;
+}
+
+table.data tbody tr{
+	background-color:#FFF;
+}
+
+table.data tbody tr.odd{
+	background-color:#CCCCCC;
+}
+table.data tbody tr td{
+	font-size:10px;
+	text-align:center;
+	color:#000000;
+}
+
+div#tags{
+	background-color:#999999;
+	color:#FFFFFF;
+	font-size:12px;
+	padding:10px;
+	width:480px;
+}
+
+div#remarks{
+	background-color:#999999;
+	color:#FFFFFF;
+	font-size:12px;
+	padding:10px;
+	width:504px;
+}
+
+a.common{
+	color:#FFFFFF;
+	text-decoration:none;
+}
+a.common:link,a.common:visited{
+	color:#FFFFFF;
+}
+a.common:hover,a.common:active{
+	color:#DDDDDD;
+}
+
+a.action-button,a.action-button:link,a.action-button:visited{
+	text-decoration:none;
+	font-size:12px;
+	background-color: #333333;
+	padding:5px 10px;
+	color:#FFF;
+}
+
+a.action-button:hover,a.action-button:active{
+	background-color: #000000;
+}
+
+input.action-button{
+	border:none;
+	font-size:12px;
+	background-color: #333333;
+	padding:5px 10px;
+	color:#FFF;
+	cursor: pointer;
+}
+
+
+/***validation message *****/
+span.box-msg{
+	position:absolute;
+	top:0px;
+	left:0px;
+	color:#FFFFFF;
+	display:block;
+	white-space:nowrap;
+	
+	font-size:12px;
+	font-weight:bold;
+	padding:2px 5px;
+	
+	background-color: #FF0000;
+}
+
+span.form2-box{
+	margin:0px 0px 0px 300px;
+}
+
+span.form3-box{
+	margin:0px 0px 0px 480px;
+}
+
+p.common{
+	font-size:12px;
+}
+span.small{
+	font-size:8px;
+}
+span.big{
+	font-weight:bold;
+}
+span.title{
+	font-size:14px;
+}
+span.cell{
+	display:block;
+	width:60px;
+	height:10px;
+}
+span.red,span.reject{
+	color:#FF0000;
+}
+span.blue{
+	color:#0000FF;
+}
+span.yellow,span.waiting{
+	color:#FFFF00;
+}
+span.green,span.approve{
+	color:#66FF66;
+}
+span.status{
+	background-color: #333333;
+	padding:2px;
+}
+.spin{
+	
+	width:31px;
+	height:31px;
+	background-image: url('../images/loading.gif');
+	background-repeat: none;
+	background-position: top left;
+	display: none;
+}
+
+hr.line{
+	color:#ccc;
+	
+}
+
+select#from-time-sec,select#to-time-sec{
+	position: relative;
+}
